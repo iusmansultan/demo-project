@@ -1,0 +1,1324 @@
+@import url("fonts.css");
+/* ---------- Functions ----------*/
+/* ---------- Constants ----------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "AspiraRegular", Tahoma;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.4);
+  height: 4rem;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80.25rem;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 20px;
+}
+header .logo a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+header .logo img {
+  width: 2rem;
+}
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  padding: 5px 0.5rem;
+}
+header nav ul li:last-child {
+  margin-left: 10px;
+  padding-right: 0;
+}
+header nav ul li .submenu {
+  display: none;
+}
+header li.expandable:hover {
+  padding-left: 30rem;
+}
+header li.expandable:hover .submenu {
+  display: block;
+}
+header .submenu {
+  display: none;
+  width: 100vw;
+  position: fixed;
+  top: 64px;
+  left: 0;
+  background: #000;
+}
+header .submenu .content-block {
+  width: 80.25rem;
+  position: relative;
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+}
+header .submenu .content-block label {
+  display: block;
+  color: #dee0e3;
+  font-size: 1.0625rem;
+  margin-bottom: 2rem;
+}
+header .submenu .content-block a.submenu-item {
+  display: block;
+  line-height: 4.75rem;
+  font-size: 3rem;
+  font-family: "AspiraLight";
+  font-weight: normal;
+}
+header .submenu .content-block a.close {
+  position: absolute;
+  display: none;
+  right: 0;
+  background: url("images/icon-cross-white.svg") no-repeat center center;
+  background-size: contain;
+  width: 1.375rem;
+  height: 1.375rem;
+}
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 3.75rem;
+  display: block;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-section {
+  position: relative;
+  height: 1900px;
+  width: 100%;
+  overflow: hidden;
+}
+.video-section video {
+  z-index: -1;
+  display: none;
+  /*position: absolute;      // by default all videos position should be on same coordinates to avoid position flactuation
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);*/
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
+.video-section #intro-video-seq1 {
+  display: block;
+}
+
+section.row {
+  position: relative;
+}
+section.row .content-block {
+  width: 80.25rem;
+  margin: 0 auto;
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+section.disruptive-sec {
+  min-height: 100vh;
+  background-color: #000;
+  padding-top: 18rem;
+}
+section.disruptive-sec .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 59rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.disruptive-sec .sec-content h2.block {
+  width: 80%;
+  font-size: 5.328vw;
+  color: #fff;
+  font-family: "AspiraBold";
+  text-align: center;
+  margin-bottom: 0;
+  margin: auto;
+}
+section.disruptive-sec .sec-content h2 + p {
+  text-align: center;
+  font-size: 1.554vw;
+  margin: 1.25rem 0 0 0;
+  color: #fff;
+  width: 59rem;
+}
+section.disruptive-sec .media {
+  max-width: 57rem;
+  height: 90vh;
+  margin: auto;
+  background: url(images/object-in-phone.webp) #000 no-repeat center top;
+  background-size: contain;
+}
+section.disruptive-sec .arrow-down {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 6.3125rem auto 17.0625rem;
+  background: url("images/arrow-down.svg") no-repeat center center;
+  background-size: contain;
+}
+
+section.from-great {
+  min-height: 100vh;
+  background-color: #f6f7f7;
+}
+section.from-great .sec-content {
+  margin: auto;
+  padding-left: 25%;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.from-great .sec-content h2.block {
+  width: 80%;
+  font-size: 5.328vw;
+  color: #000;
+  font-family: "AspiraBold";
+  text-align: left;
+  margin-bottom: 0;
+}
+section.from-great .sec-content h2 + p {
+  text-align: left;
+  font-size: 1.998vw;
+  margin: 3.1875rem 0 0 0;
+  color: #000;
+  width: 43.625rem;
+}
+section.from-great .content-block::before {
+  margin-bottom: 22vh;
+  content: "";
+  display: block;
+}
+section.from-great .content-block .sec-content h2 {
+  line-height: 7vw;
+  font-size: 7.548vw;
+  width: 100%;
+  color: #15191d;
+}
+section.from-great .content-block .sec-content p {
+  color: #7e8791;
+}
+section.from-great .media {
+  background: url(images/from-the-great@2x.png) no-repeat left bottom;
+  background-size: contain;
+  width: 50%;
+  height: 70vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+}
+
+section.to-greatest {
+  min-height: 100vh;
+  background: rgb(246, 247, 247);
+  background: linear-gradient(180deg, rgb(246, 247, 247) 0%, rgb(253, 245, 255) 49%, rgb(232, 239, 255) 100%);
+}
+section.to-greatest .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.to-greatest .sec-content h2.block {
+  width: 80%;
+  font-size: 5.328vw;
+  color: #000;
+  font-family: "AspiraBold";
+  text-align: left;
+  margin-bottom: 0;
+}
+section.to-greatest .sec-content h2 + p {
+  text-align: left;
+  font-size: 1.998vw;
+  margin: 3.1875rem 0 0 0;
+  color: #000;
+  width: 35.875rem;
+}
+section.to-greatest .content-block::before {
+  margin-bottom: 22vh;
+  content: "";
+  display: block;
+}
+section.to-greatest .content-block .sec-content {
+  margin: 0;
+}
+section.to-greatest .content-block .sec-content h2 {
+  font-size: 7.548vw;
+  line-height: 7vw;
+  background: linear-gradient(116deg, #731eff 0%, #ff63be 49%, #ffc0e4 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 5px;
+}
+section.to-greatest .content-block .sec-content h2 + p {
+  color: #313a45;
+}
+section.to-greatest .media {
+  background: url(images/to-the-greatest-002.webp) no-repeat left bottom;
+  background-size: contain;
+  width: 50%;
+  height: 80vh;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  right: 0;
+}
+
+section.design-system {
+  min-height: 100vh;
+  background: #f6f7f7;
+}
+section.design-system .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.design-system .sec-content h2.block {
+  width: 80%;
+  font-size: 5.328vw;
+  color: #000;
+  font-family: "AspiraBold";
+  text-align: left;
+  margin-bottom: 0;
+}
+section.design-system .sec-content h2 + p {
+  text-align: left;
+  font-size: 1.998vw;
+  margin: 3.1875rem 0 0 0;
+  color: #000;
+  width: 6.25rem;
+}
+section.design-system img {
+  width: 100%;
+  height: auto;
+}
+section.design-system .content-block {
+  margin-top: -9rem;
+}
+section.design-system .sec-content {
+  width: 100%;
+  max-width: 100%;
+}
+section.design-system .sec-content h2.block {
+  font-size: 9.879vw;
+  color: #15191d;
+  width: 100%;
+  line-height: 10.5vw;
+  margin: 0;
+}
+section.design-system .sec-content h2 + p {
+  color: #596472;
+  width: 100%;
+}
+section.design-system img.ds2 {
+  margin-top: -20rem;
+}
+
+section.personalization {
+  min-height: 100vh;
+  background: #fff;
+}
+section.personalization .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.personalization .sec-content h2.block {
+  width: 80%;
+  font-size: 5.328vw;
+  color: #000;
+  font-family: "AspiraBold";
+  text-align: center;
+  margin-bottom: 0;
+  margin: auto;
+}
+section.personalization .sec-content h2 + p {
+  text-align: center;
+  font-size: 1.998vw;
+  margin: 3.1875rem 0 0 0;
+  color: #000;
+  width: 6.25rem;
+}
+section.personalization img {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 5.5rem auto 0;
+}
+section.personalization .content-block {
+  height: auto;
+  min-height: 100vh;
+}
+section.personalization .sec-content {
+  width: 100%;
+  max-width: 100%;
+}
+section.personalization .sec-content h2.block {
+  font-size: 6.66vw;
+  color: #15191d;
+  width: 100%;
+  line-height: 10.5vw;
+  margin: 0;
+}
+section.personalization .sec-content h2 + p {
+  color: #7e8791;
+  width: 100%;
+}
+
+section.motion {
+  min-height: 100vh;
+  background: #f6f7f7;
+}
+section.motion .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.motion .sec-content h2.block {
+  width: 80%;
+  font-size: 5.328vw;
+  color: #000;
+  font-family: "AspiraBold";
+  text-align: left;
+  margin-bottom: 0;
+}
+section.motion .sec-content h2 + p {
+  text-align: left;
+  font-size: 1.332vw;
+  margin: 1.125rem 0 0 0;
+  color: #000;
+  width: 6.25rem;
+}
+section.motion img {
+  width: 80%;
+  max-width: 90rem;
+  height: auto;
+  display: block;
+  margin: 13rem auto 4.25rem;
+}
+section.motion .content-block {
+  height: auto;
+}
+section.motion .sec-content {
+  width: 93%;
+  max-width: 92%;
+}
+section.motion .sec-content h2.block {
+  font-size: 3.552vw;
+  color: #15191d;
+  width: 100%;
+  line-height: auto;
+  margin: 0;
+}
+section.motion .sec-content h2 + p {
+  color: #596472;
+  width: 100%;
+  margin-bottom: 13rem;
+}
+
+section.wearables {
+  min-height: 100vh;
+  background: #000;
+}
+section.wearables .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.wearables .sec-content h2.block {
+  width: 70%;
+  font-size: 5.328vw;
+  color: #fff;
+  font-family: "AspiraBold";
+  text-align: left;
+  margin-bottom: 0;
+}
+section.wearables .sec-content h2 + p {
+  text-align: left;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0 0;
+  color: #fff;
+  width: 6.25rem;
+}
+section.wearables img.watch-slider {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 9.375rem auto 20.4375rem;
+}
+section.wearables .content-block {
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 28.125rem;
+}
+section.wearables .content-block h1.art {
+  color: #fff;
+  font-size: 14.208vw;
+  text-align: center;
+}
+section.wearables .content-block img {
+  position: absolute;
+  top: 30rem;
+  height: 80vh;
+  width: auto;
+  margin: 0;
+  left: 50%;
+  transform: translate(-41%, 0);
+}
+section.wearables .sec-content {
+  width: 93%;
+  max-width: 92%;
+}
+section.wearables .sec-content h2.block {
+  line-height: auto;
+  margin: 0;
+}
+section.wearables .sec-content h2 + p {
+  color: #596472;
+  width: 80%;
+}
+
+section.digital-cards {
+  min-height: 100vh;
+  background-color: #f6f7f7;
+}
+section.digital-cards .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.digital-cards .sec-content h2.block {
+  width: 100%;
+  font-size: 5.328vw;
+  color: #fff;
+  font-family: "AspiraBold";
+  text-align: left;
+  margin-bottom: 0;
+}
+section.digital-cards .sec-content h2 + p {
+  text-align: left;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0 0;
+  color: #fff;
+  width: 6.25rem;
+}
+section.digital-cards .content-block {
+  width: 90rem;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+  padding-top: 28.125rem;
+  background: url("images/digital-debit-cards@2x.png") #f6f7f7 no-repeat left 180px;
+  background-size: 100vh;
+}
+section.digital-cards .sec-content {
+  margin: 95vh 0 15.25rem 40%;
+  min-width: 51.3125rem;
+}
+section.digital-cards .sec-content h2.block {
+  line-height: auto;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 7.104vw;
+}
+section.digital-cards .sec-content h2 + p {
+  color: #a3a9b1;
+  width: 100%;
+}
+
+section.global-search {
+  min-height: 100vh;
+  background-color: #edeef0;
+}
+section.global-search .sec-content {
+  margin: auto;
+  padding-left: 0;
+  max-width: 43.625rem;
+  width: 90%;
+  position: relative;
+  z-index: 9;
+}
+section.global-search .sec-content h2.block {
+  width: 100%;
+  font-size: 5.328vw;
+  color: #fff;
+  font-family: "AspiraBold";
+  text-align: center;
+  margin-bottom: 0;
+  margin: auto;
+}
+section.global-search .sec-content h2 + p {
+  text-align: center;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0 0;
+  color: #fff;
+  width: 6.25rem;
+}
+section.global-search .content-block {
+  width: 90rem;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+}
+section.global-search .sec-content {
+  margin: 13.431vw auto 7.3815vw;
+  max-width: 90%;
+}
+section.global-search .sec-content h2.block {
+  line-height: auto;
+  margin: 0;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 7.104vw;
+}
+section.global-search .sec-content h2 + p {
+  color: #596472;
+  width: 100%;
+}
+section.global-search img {
+  margin: 0 auto 15.984vw;
+  display: block;
+}
+
+section.contactless-payments {
+  min-height: 100vh;
+  background: url("images/pos-phone@2x.jpg") #000 no-repeat center center;
+  background-size: contain;
+}
+section.contactless-payments .content-block {
+  width: 80.25rem;
+  height: auto;
+  min-height: 100vh;
+  position: relative;
+}
+section.contactless-payments .sec-content {
+  padding: 16.65vw 0 6.66vw;
+  max-width: 92%;
+  margin: auto;
+}
+section.contactless-payments .sec-content h2.block {
+  font-size: 7.104vw;
+  background-image: linear-gradient(144deg, #eee 51%, #000202 84%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 60%;
+}
+section.contactless-payments .sec-content h2 + p {
+  width: 100%;
+  margin-top: 88vh;
+  background-image: linear-gradient(158deg, rgba(0, 0, 0, 0) -21%, #d8d8d8 27%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.998vw;
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background: #040405;
+  padding: 3.8125rem 5% 3.8125rem;
+}
+footer .content-block {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+footer .content-block .col:nth-child(2) {
+  display: none;
+}
+footer .content-block .col {
+  color: #fff;
+  width: 40%;
+  min-width: 21.875rem;
+  padding-bottom: 3.8125rem;
+}
+footer .content-block .col label {
+  color: #dee0e3;
+  font-size: 0.8125rem;
+  margin-bottom: 0.75rem;
+}
+footer .content-block .col a,
+footer .content-block .col a:hover,
+footer .content-block .col a:active {
+  color: #596472;
+  font-size: 0.8125rem;
+  margin-bottom: 0.5625rem;
+  text-decoration: none;
+}
+footer .content-block .col .footer-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+footer .content-block .col .footer-nav .nav-group {
+  display: flex;
+  flex-direction: column;
+}
+footer .content-block .col a.mailto {
+  display: block;
+  line-height: 2rem;
+}
+footer .content-block .col form {
+  margin: 0;
+  padding: 0;
+}
+footer .content-block .col .form-field {
+  background: #0f1114;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  color: #454a4f;
+  width: 100%;
+  border: 0;
+  padding: 0.75rem 0.9375rem;
+  margin: 0 0 0.75rem;
+}
+
+main#study-ibm .content-block {
+  width: 80.25rem;
+}
+main#study-ibm section.ibm-header-banner {
+  min-height: 100vh;
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#study-ibm section.ibm-header-banner .sec-content h2 {
+  line-height: 7vw;
+  font-size: 7.548vw;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "AspiraBold";
+}
+main#study-ibm section.ibm-header-banner .sec-content p {
+  color: #7e8791;
+}
+main#study-ibm section.ibm-title-header2 {
+  background-color: #131313;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#study-ibm section.ibm-title-header2 .small-scr-alt {
+  display: none;
+}
+main#study-ibm section.ibm-title-header2 .sec-content h2 {
+  line-height: 7vw;
+  font-size: 6.66vw;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-family: "AspiraBold";
+}
+main#study-ibm section.ibm-title-header2 .sec-content p {
+  color: #d6eaff;
+  font-size: 48px;
+  letter-spacing: 1px;
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+}
+main#study-ibm section.ibm-title-header2 .scroll-arrow {
+  background: url("images/digitalonbaording/arrow-24-white.svg") no-repeat center center;
+  background-size: contain;
+  width: 2.625rem;
+  height: 2.625rem;
+  margin: 7.375rem auto 12.1875rem;
+}
+main#study-ibm section.ibm-banking-experience {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #1e8aff;
+  display: flex;
+  flex-direction: column;
+}
+main#study-ibm section.ibm-banking-experience .sec-content {
+  width: 75%;
+  margin: 0 auto;
+}
+main#study-ibm section.ibm-banking-experience .sec-content h2 {
+  line-height: auto;
+  font-size: 5.55vw;
+  width: 100%;
+  color: white;
+  text-align: left;
+  font-family: "AspiraBold";
+  margin: 0;
+  padding-top: 20px;
+  letter-spacing: normal;
+}
+main#study-ibm section.ibm-banking-experience .sec-content p {
+  color: #ffffff;
+  width: 100%;
+  margin: 0;
+  font-size: 32px;
+  text-align: left;
+  padding-top: 44px;
+  padding-bottom: 400px;
+}
+main#study-ibm section.ibm-banking-experience img {
+  width: 80%;
+  margin-top: 12.875rem;
+}
+main#study-ibm section.ibm-banking-experience img.create-user-account {
+  position: absolute;
+  z-index: 2;
+  top: 62.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50%;
+  max-width: 80.25rem;
+}
+main#study-ibm section.customer-journey-experience {
+  width: 100%;
+  background: url("images/digitalonbaording/journey-screens@3x.png") #e6e6e6 no-repeat bottom center;
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  height: 232rem;
+}
+main#study-ibm section.customer-journey-experience .content-block {
+  min-height: 100vh;
+  height: auto;
+}
+main#study-ibm section.customer-journey-experience .content-block .sec-content {
+  width: 75%;
+  margin: 0 auto;
+}
+main#study-ibm section.customer-journey-experience .content-block .sec-content h2 {
+  line-height: auto;
+  font-size: 5.55vw;
+  width: 100%;
+  color: #000000;
+  text-align: left;
+  font-family: "AspiraBold";
+  margin: 0;
+  padding-top: 40rem;
+  letter-spacing: normal;
+}
+main#study-ibm section.customer-journey-experience .content-block .sec-content p {
+  color: #606060;
+  width: 95%;
+  margin: 0;
+  font-size: 32px;
+  text-align: left;
+  padding-top: 44px;
+  padding-bottom: 400px;
+}
+main#study-ibm section.customer-journey-experience img {
+  width: 100%;
+  float: left;
+  margin-top: 206px;
+}
+main#study-ibm section.customer-journey-experience .img4 {
+  position: absolute;
+  padding-top: 1150px;
+}
+
+main#study-bok .content-block {
+  width: 80.25rem;
+  margin: auto;
+}
+main#study-bok .content-block h2, main#study-bok .content-block p {
+  margin: 0;
+  line-height: auto;
+}
+main#study-bok section.bok-hero-banner {
+  height: 100vh;
+  width: 100%;
+  background: url("images/bok/bok-bg.png") #2d2e87 no-repeat bottom right;
+  background-size: 93%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#study-bok section.bok-hero-banner .sec-content {
+  margin: 16.3125rem auto 0;
+  width: 90%;
+}
+main#study-bok section.bok-hero-banner .sec-content h2 {
+  font-size: 7.104vw;
+  margin-bottom: 2.25rem;
+  color: #ffffff;
+  font-family: "AspiraBold";
+  text-align: center;
+}
+main#study-bok section.bok-hero-banner .sec-content p {
+  text-align: center;
+  font-size: 2.664vw;
+  color: #ffffff;
+}
+main#study-bok section.bok-hero-banner .arrow-down {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 9.375rem auto 7.8125rem;
+  background: url("images/arrow-down.svg") no-repeat center center;
+  background-size: contain;
+}
+main#study-bok section.bok-app-icon-identity {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #e5e7e9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+main#study-bok section.bok-app-icon-identity .sec-content {
+  width: 85%;
+  margin: 0 auto;
+}
+main#study-bok section.bok-app-icon-identity .sec-content h2 {
+  font-size: 6.549vw;
+  color: #000000;
+  font-family: "AspiraBold";
+  text-align: left;
+}
+main#study-bok section.bok-app-icon-identity .sec-content p {
+  font-size: 1.848vw;
+  color: #7e8791;
+  text-align: left;
+}
+main#study-bok section.bok-app-icon-identity img {
+  width: 90%;
+  z-index: 2;
+}
+main#study-bok section.bok-app-icon-identity img.app-icon {
+  width: 100%;
+}
+main#study-bok section.bok-mobile-interface {
+  min-height: 100vh;
+  margin-top: -49rem;
+  background: url("images/bok/mobile-interface.png") #151515 no-repeat center 56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+main#study-bok section.bok-mobile-interface .sec-content {
+  margin: 43rem auto 3rem;
+  width: 90%;
+}
+main#study-bok section.bok-mobile-interface .sec-content h2 {
+  font-size: 7.104vw;
+  color: #ffffff;
+  font-family: "AspiraBold";
+}
+main#study-bok section.bok-mobile-interface .sec-content p {
+  text-align: left;
+  font-size: 1.848vw;
+  color: #ffffff;
+}
+main#study-bok section.bok-mobile-interface img {
+  margin: 87rem 0 6.25rem;
+  width: 100%;
+}
+main#study-bok section.bok-web-interface {
+  min-height: 100vh;
+  background-color: #f6f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+main#study-bok section.bok-web-interface .sec-content {
+  margin: 25.4375rem 0 0;
+  right: 5%;
+  position: relative;
+  float: right;
+  width: 50%;
+}
+main#study-bok section.bok-web-interface .sec-content h2 {
+  font-size: 7.104vw;
+  color: #000000;
+  font-family: "AspiraBold";
+  text-align: right;
+}
+main#study-bok section.bok-web-interface .sec-content p {
+  text-align: right;
+  font-size: 1.848vw;
+  color: #7e8791;
+  text-align: right;
+}
+main#study-bok section.bok-web-interface img {
+  clear: both;
+  width: 100%;
+  margin-top: -12rem;
+}
+
+main#study-transroad .content-block {
+  width: 80.25rem;
+  margin: 0 auto;
+}
+main#study-transroad .video-section-transroad {
+  position: relative;
+  height: 1000px;
+  width: 100%;
+  overflow: hidden;
+}
+main#study-transroad .video-section-transroad video {
+  z-index: -1;
+  display: none;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+}
+main#study-transroad .video-section-transroad #intro-video-seq1 {
+  display: block;
+}
+main#study-transroad section.hero-title {
+  background: #000;
+}
+main#study-transroad section.hero-title .content-block h2 {
+  background-image: linear-gradient(23deg, #adfc6f 39%, #d7ffb6 87%, rgba(255, 255, 255, 0.78) 87%);
+  text-align: center;
+  font-size: 8rem;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 6.25rem 0 1.5625rem;
+}
+main#study-transroad section.hero-title .content-block p {
+  font-size: 3rem;
+  color: #fff;
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+main#study-transroad section.hero-title .content-block .arrow-down {
+  width: 1.75rem;
+  height: 1.75rem;
+  margin: 7.5625rem auto 16.625rem;
+  background: url("images/arrow-down.svg") no-repeat center center;
+  background-size: contain;
+}
+main#study-transroad section.transroad-icon-identity {
+  height: 100vh;
+  width: 100%;
+  background: url(images/transroad/bg_pattern.png) #fdfdfd repeat;
+  background-size: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#study-transroad section.transroad-icon-identity img {
+  width: 60%;
+}
+main#study-transroad section.transroad-icon-identity .mobile-fig1, main#study-transroad section.transroad-icon-identity .mobile-fig2 {
+  display: none;
+}
+main#study-transroad section.transroad-brand-visuals {
+  min-height: auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+main#study-transroad section.transroad-brand-visuals img.fig {
+  max-width: 90rem;
+  width: 90%;
+  margin: 10rem auto 0;
+}
+main#study-transroad section.transroad-visual-language {
+  background-color: #131313;
+  padding-left: 225px;
+}
+main#study-transroad section.transroad-visual-language .sec-content {
+  margin: 15rem 0 4rem;
+}
+main#study-transroad section.transroad-visual-language .sec-content h2 {
+  font-size: 7.104vw;
+  margin: 0.8rem 0 0;
+  color: #ffffff;
+  font-family: "AspiraRegular";
+}
+main#study-transroad section.transroad-visual-language .sec-content p {
+  color: #7e8791;
+  width: 950px;
+  font-size: 1.998vw;
+}
+main#study-transroad section.transroad-mobile-app {
+  background-color: #131313;
+  margin: 0;
+}
+main#study-transroad section.transroad-mobile-app img.mobile-app-views {
+  margin: 0 0 12.875rem;
+}
+main#study-transroad section.transroad-mobile-ss {
+  min-height: auto;
+  background-color: #f4f5f5;
+  margin: 0;
+}
+main#study-transroad section.transroad-mobile-ss .sec-content {
+  width: 95%;
+  margin: 0px_to_rem 160 auto 0;
+}
+main#study-transroad section.transroad-mobile-ss .sec-content h2 {
+  line-height: auto;
+  font-size: 7.104vw;
+  color: #000000;
+}
+main#study-transroad section.transroad-mobile-ss .sec-content p {
+  color: #7e8791;
+  width: 950px;
+  font-size: 1.998vw;
+}
+main#study-transroad section.transroad-mobile-ss img {
+  margin: 0 0 3.125rem;
+}
+main#study-transroad section.transroad-mobile-ss-customer {
+  min-height: auto;
+  background-color: #adfc6f;
+}
+main#study-transroad section.transroad-mobile-ss-customer .sec-content {
+  margin: 10rem auto 3.125rem;
+}
+main#study-transroad section.transroad-mobile-ss-customer .sec-content h2 {
+  line-height: auto;
+  font-size: 7.104vw;
+  color: #000000;
+  margin: 0;
+}
+main#study-transroad section.transroad-mobile-ss-customer .sec-content p {
+  color: #0e1708;
+  width: 950px;
+  font-size: 1.998vw;
+}
+main#study-transroad section.transroad-mobile-ss-customer img {
+  margin: 0 0 6.25rem;
+}
+
+main#study-fusion .content-block {
+  width: 80.25rem;
+}
+main#study-fusion section.fusion-title-header {
+  background: url("images/fusion/fusion-hero-banner@2x.webp") #f2f3f4 no-repeat center 0;
+  background-size: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+main#study-fusion section.fusion-title-header .content-block {
+  height: auto;
+}
+main#study-fusion section.fusion-title-header .content-block .sec-content {
+  margin-top: 68rem;
+}
+main#study-fusion section.fusion-title-header .content-block .sec-content h2 {
+  margin: 0;
+  font-size: 6.993vw;
+  width: 100%;
+  color: #15191d;
+  text-align: center;
+  font-family: "AspiraBold";
+}
+main#study-fusion section.fusion-title-header .content-block .sec-content p {
+  color: #7e8791;
+  font-size: 2.25rem;
+  text-align: center;
+}
+main#study-fusion section.fusion-title-header .content-block .scroll-arrow {
+  background: url("images/fusion/arrow-24-black.svg") no-repeat center center;
+  background-size: contain;
+  width: 2.625rem;
+  height: 2.625rem;
+  margin: 4.1875rem auto 11.8125rem;
+}
+main#study-fusion section.fusion-inhouse {
+  background: url("images/fusion/saas-objects@2x.webp") #e5e7e9 no-repeat center 14.0625rem;
+  background-size: 120rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 225px;
+}
+main#study-fusion section.fusion-inhouse .content-block {
+  height: auto;
+}
+main#study-fusion section.fusion-inhouse .content-block .sec-content {
+  margin-top: 1150px;
+}
+main#study-fusion section.fusion-inhouse .content-block .sec-content h2 {
+  font-size: 7.104vw;
+  width: 100%;
+  margin: 0;
+  color: #15191d;
+  font-family: "AspiraBold";
+}
+main#study-fusion section.fusion-inhouse .content-block .sec-content p {
+  color: #7e8791;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0;
+}
+main#study-fusion section.fusion-inhouse img {
+  width: 60%;
+}
+main#study-fusion section.fusion-asthetic {
+  height: 190rem;
+  background: url("images/fusion/fusion-ui-components@2x.webp") #15191d no-repeat center 64rem;
+  background-size: 92.875rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#study-fusion section.fusion-asthetic .content-block {
+  height: 100%;
+}
+main#study-fusion section.fusion-asthetic .content-block .sec-content {
+  margin: 21.625rem 0 0;
+}
+main#study-fusion section.fusion-asthetic .content-block .sec-content h2 {
+  font-size: 7.104vw;
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-family: "AspiraBold";
+}
+main#study-fusion section.fusion-asthetic .content-block .sec-content p {
+  color: #7e8791;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0;
+  width: 82%;
+}
+main#study-fusion section.fusion-mobile-app {
+  background-color: #f6f7f7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main#study-fusion section.fusion-mobile-app .content-block {
+  height: auto;
+}
+main#study-fusion section.fusion-mobile-app .content-block .sec-content {
+  width: 80%;
+  margin: 13.4375rem auto 0;
+}
+main#study-fusion section.fusion-mobile-app .content-block .sec-content h2 {
+  font-size: 7.104vw;
+  width: 100%;
+  margin: 0;
+  color: #000000;
+  font-family: "AspiraBold";
+}
+main#study-fusion section.fusion-mobile-app .content-block .sec-content p {
+  color: #7e8791;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0;
+}
+main#study-fusion section.fusion-mobile-app img.logo-object {
+  width: 44rem;
+  margin: 6.5625rem auto 18.125rem;
+}
+main#study-fusion section.fusion-mobile-app img.app-preview {
+  margin: 0;
+  width: 100%;
+}
+main#study-fusion section.fusion-web-app {
+  background: url("images/fusion/fusion-web-device@2x.webp") #15191d no-repeat right bottom;
+  background-size: 75%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 115rem;
+}
+main#study-fusion section.fusion-web-app .content-block {
+  height: 100%;
+}
+main#study-fusion section.fusion-web-app .content-block .sec-content {
+  margin: 15.875rem auto 0;
+  width: 55%;
+}
+main#study-fusion section.fusion-web-app .content-block .sec-content h2 {
+  font-size: 7.548vw;
+  width: 100%;
+  margin: 0;
+  color: #ffffff;
+  font-family: "AspiraBold";
+}
+main#study-fusion section.fusion-web-app .content-block .sec-content p {
+  color: #a3a9b1;
+  font-size: 1.998vw;
+  margin: 2.25rem 0 0;
+}
+main#study-fusion section.fusion-web-preview {
+  background-color: #000;
+}
+main#study-fusion section.fusion-web-preview img.web-preview {
+  width: 100%;
+  margin: 0;
+}

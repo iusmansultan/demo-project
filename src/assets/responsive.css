@@ -1,0 +1,856 @@
+/* Mobile Devices: */
+@media only screen and (max-width: 767px) {
+  a {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0.1);
+  }
+  /* Styles for devices with a maximum width of 767px (e.g., smartphones) */
+  header .logo img {
+    width: 2rem;
+  }
+  header nav a {
+    font-size: 1rem !important;
+    font-weight: normal;
+  }
+  header li.expandable:hover {
+    padding-left: 0.5rem;
+  }
+  header .submenu {
+    height: 100vh;
+  }
+  header .submenu .content-block {
+    width: 90% !important;
+    margin: 0 auto;
+  }
+  header .submenu .content-block label {
+    font-size: 0.8rem !important;
+    margin-bottom: 1.2rem !important;
+  }
+  header .submenu .content-block a.close {
+    display: block;
+    top: -2.75rem;
+    right: 5% !important;
+  }
+  header .submenu .content-block a.submenu-item {
+    font-size: 1.2rem !important;
+    line-height: 3.6rem !important;
+    width: 95%;
+    background: url("images/nav-arrow-right-white.svg") no-repeat right center;
+    background-size: 0.7rem;
+  }
+  main#study-ubl section .content-block {
+    width: 90%;
+  }
+  main#study-ubl section .content-block::before {
+    margin-bottom: 5rem;
+  }
+  main#study-ubl section .content-block .sec-content {
+    padding: 0;
+  }
+  main#study-ubl section .content-block .sec-content h2 {
+    font-size: 2.9rem;
+    line-height: 3rem;
+  }
+  main#study-ubl section .content-block .sec-content p {
+    margin: 1.25rem 0 0 0;
+    font-size: 0.93rem;
+    width: auto;
+  }
+  main#study-ubl section.video-section .video-overlay-content {
+    margin: auto;
+    left: 50%;
+    top: 9.4rem;
+    transform: translate(-50%, 0);
+    width: 93%;
+  }
+  main#study-ubl section.video-section .video-overlay-content .label {
+    color: #fff;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 90%;
+    margin: auto;
+  }
+  main#study-ubl section.video-section .video-overlay-content .h2 {
+    color: #fff;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    text-align: center;
+    background: linear-gradient(197deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 64%, rgba(255, 255, 255, 0) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  main#study-ubl section.from-great {
+    height: 100vh;
+  }
+  main#study-ubl section.from-great .content-block {
+    height: 100%;
+  }
+  main#study-ubl section.from-great .content-block .media {
+    width: 90%;
+    height: 100%;
+  }
+  main#study-ubl section.to-greatest {
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #f6f7f7, #fdf5ff 47%, #e8efff 99%);
+  }
+  main#study-ubl section.to-greatest .media {
+    width: 100%;
+  }
+  main#study-ubl section.design-system .content-block {
+    margin-top: 1.5rem;
+    height: 70vh;
+  }
+  main#study-ubl section.design-system img.ds2 {
+    margin-top: -17rem;
+  }
+  main#study-ubl section.personalization {
+    min-height: 59vh;
+    background: url("images/personalisation@2x.jpg") no-repeat;
+    background-size: 126%;
+    background-position-x: 20%;
+    background-position-y: bottom;
+  }
+  main#study-ubl section.personalization .content-block {
+    height: auto;
+    min-height: auto;
+  }
+  main#study-ubl section.personalization .content-block .sec-content {
+    padding-top: 4.8rem;
+  }
+  main#study-ubl section.personalization img {
+    display: none;
+  }
+  main#study-ubl section.motion {
+    min-height: auto;
+  }
+  main#study-ubl section.motion img {
+    display: none;
+  }
+  main#study-ubl section.motion .media {
+    margin: 3.5rem auto 0;
+    background: url("images/mobile-motion@2x.png") no-repeat center center;
+    background-size: contain;
+    height: 30.6rem;
+    width: 100%;
+    display: block;
+  }
+  main#study-ubl section.motion .content-block {
+    height: auto;
+    min-height: auto;
+  }
+  main#study-ubl section.motion .content-block .sec-content {
+    padding: 3.5rem 0 7.6rem;
+  }
+  main#study-ubl section.wearables {
+    overflow-x: hidden;
+  }
+  main#study-ubl section.wearables img {
+    top: 7.5rem;
+    height: 24.3rem;
+    transform: translate(-36%, 0);
+  }
+  main#study-ubl section.wearables h1.art {
+    text-align: left;
+    margin: 20rem auto 0;
+    width: 93%;
+  }
+  main#study-ubl section.wearables .content-block {
+    min-height: 50vh;
+  }
+  main#study-ubl section.wearables .content-block h2 {
+    display: none;
+  }
+  main#study-ubl section.wearables img.watch-slider {
+    width: auto;
+    height: 21.8rem;
+    transform: translate(-22%, 0);
+    margin: 6.8rem 0 9.1rem;
+  }
+  main#study-ubl section.digital-cards {
+    background: url("images/digital-debit-cards@2x.png") #f6f7f7 no-repeat -5rem 6.5rem;
+    background-size: 65vh;
+  }
+  main#study-ubl section.digital-cards .content-block {
+    background: none;
+    min-height: 90vh;
+  }
+  main#study-ubl section.digital-cards .content-block .sec-content {
+    width: 93%;
+    min-width: auto;
+    max-width: auto;
+    margin: 24rem auto 0;
+  }
+  main#study-ubl section.digital-cards .content-block p {
+    color: #596472;
+  }
+  main#study-ubl section.global-search {
+    background: url("images/global_search@2x.webp") #edeef0 no-repeat 25% 20rem;
+    background-size: 150vh;
+    min-height: 110vh;
+  }
+  main#study-ubl section.global-search .content-block {
+    margin: 6.25rem auto 3rem;
+    min-height: auto;
+  }
+  main#study-ubl section.global-search .content-block h2 {
+    text-align: left;
+  }
+  main#study-ubl section.global-search .content-block p {
+    text-align: left;
+  }
+  main#study-ubl section.global-search .content-block img {
+    display: none;
+  }
+  main#study-ubl section.contactless-payments {
+    background: url("images/pos-phone@3x.webp") #000 no-repeat 83% 13%;
+    background-size: 200%;
+  }
+  main#study-ubl section.contactless-payments .content-block h2 {
+    width: 93%;
+    padding-top: 5rem;
+  }
+  main#study-ubl section.contactless-payments .content-block h2 + p {
+    margin: 26rem 0 0 0;
+    background-image: linear-gradient(173deg, rgba(0, 0, 0, 0) -87%, #d8d8d8 43%);
+  }
+  main#study-ubl section.contactless-payments .content-block img.intg-card-services {
+    height: auto;
+    width: 85%;
+  }
+  main#study-ubl section.contactless-payments .content-block p.filler {
+    color: #596472;
+    margin: 0 0 10rem;
+    font-size: px_to_rem(28);
+  }
+  footer .content-block {
+    margin: 0;
+  }
+  footer .content-block .footer-nav {
+    justify-content: space-between !important;
+  }
+  footer .content-block .col {
+    min-width: 88vw !important;
+  }
+  footer .content-block form {
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+  footer .content-block form .form-field {
+    box-sizing: border-box;
+    width: 93% !important;
+  }
+  main#static-index .section.row {
+    overflow-x: hidden;
+  }
+  main#static-index .section.row .content-block {
+    width: 90% !important;
+    margin: 200px auto;
+  }
+  main#static-index .section.row .content-block h2 {
+    font-size: 2rem;
+    text-align: left;
+    width: 90%;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block p {
+    font-size: 1.1rem;
+    text-align: left;
+    width: 90%;
+    margin-top: 24px;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block-2 {
+    width: 90% !important;
+    margin: 450px auto 0;
+  }
+  main#static-index .section.row .content-block-2 h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block-2 p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    margin-top: 24px;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block-3 {
+    width: 90% !important;
+    margin: 200px auto 0;
+  }
+  main#static-index .section.row .content-block-3 h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block-3 p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    margin-top: 24px;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block-3b {
+    width: 90% !important;
+    margin: 350px auto 250px;
+  }
+  main#static-index .section.row .content-block-3b h2 {
+    font-size: 2rem;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    flex-basis: 50%;
+  }
+  main#static-index .section.row .content-block-3b p {
+    font-size: 1.1rem;
+    text-align: left;
+    margin: auto;
+    width: 90%;
+    margin-top: 24px;
+    flex-basis: 50%;
+  }
+  main#static-index .section#slide1 {
+    background-position: 93% 14rem;
+    background-size: 303%;
+    height: 200vh;
+  }
+  main#static-index .section#slide2 {
+    background-image: url("images/index-2-1@3x.jpg"), url("images/index-2-1@3x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left top, center bottom;
+    background-size: 182%, 300%;
+  }
+  main#static-index .section#slide3 {
+    height: auto;
+    background-position: left top;
+    background-size: 267%;
+  }
+  main#static-index .section#slide3 .content-block-3 {
+    margin: 0 auto !important;
+  }
+  main#contact-us .section.row {
+    width: 100%;
+    background-position: 76% center;
+    background-size: 200%;
+  }
+  main#contact-us .section.row .content-block {
+    width: 90%;
+    margin: 7rem auto;
+  }
+  main#contact-us .section.row .content-block h2 {
+    display: none;
+  }
+  main#contact-us .section.row .content-block p {
+    text-align: center;
+  }
+  main#contact-us .section.row .content-block ul {
+    margin-top: 15rem;
+    flex-direction: column;
+  }
+  main#contact-us .section.row .content-block ul li {
+    width: 100%;
+  }
+  main#contact-us .section.row .content-block ul li h4.country-office {
+    margin: 1rem 0 0;
+    text-align: center;
+  }
+  main#contact-us .section.row .content-block ul li p.address {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  main#study-ibm section .content-block {
+    width: 90%;
+  }
+  main#study-ibm section .content-block::before {
+    margin-bottom: 5rem;
+  }
+  main#study-ibm section .content-block .sec-content {
+    padding: 0;
+  }
+  main#study-ibm section .content-block .sec-content h2 {
+    font-size: 2.75rem;
+    line-height: auto !important;
+  }
+  main#study-ibm section .content-block .sec-content p {
+    margin: 1.25rem 0 0 0;
+    font-size: 0.93rem;
+    width: auto;
+  }
+  main#study-ibm section.ibm-header-banner {
+    height: 17rem;
+    min-height: 17rem;
+  }
+  main#study-ibm section.ibm-header-banner img.image1 {
+    margin-top: 3rem;
+  }
+  main#study-ibm section.ibm-title-header2 .content-block {
+    height: 28rem;
+  }
+  main#study-ibm section.ibm-title-header2 .content-block h2.block {
+    display: none;
+  }
+  main#study-ibm section.ibm-title-header2 .content-block h2.small-scr-alt {
+    display: block;
+    font-size: 2.75rem;
+    line-height: 2.7rem;
+  }
+  main#study-ibm section.ibm-title-header2 .content-block p {
+    font-size: 0.93rem;
+    line-height: auto;
+  }
+  main#study-ibm section.ibm-title-header2 .content-block .scroll-arrow {
+    margin: 5rem auto 0;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  main#study-ibm section.ibm-banking-experience {
+    height: 42rem;
+    min-height: 42rem;
+  }
+  main#study-ibm section.ibm-banking-experience img {
+    margin-top: 2.3rem;
+  }
+  main#study-ibm section.ibm-banking-experience .content-block {
+    height: auto;
+  }
+  main#study-ibm section.ibm-banking-experience .content-block h2 {
+    font-size: 2.75rem;
+    line-height: 2.7rem;
+  }
+  main#study-ibm section.ibm-banking-experience .content-block p {
+    padding: 0;
+  }
+  main#study-ibm section.ibm-banking-experience img.create-user-account {
+    top: 33.5rem;
+  }
+  main#study-ibm section.customer-journey-experience {
+    height: 59rem;
+  }
+  main#study-ibm section.customer-journey-experience .content-block .sec-content {
+    width: 95%;
+  }
+  main#study-ibm section.customer-journey-experience .content-block .sec-content h2 {
+    padding-top: 9rem;
+    font-size: 2.75rem;
+    line-height: 2.7rem;
+    text-align: center;
+  }
+  main#study-ibm section.customer-journey-experience .content-block .sec-content p {
+    font-size: 0.93rem;
+    line-height: auto;
+    padding: 2rem 0 0;
+    text-align: center;
+  }
+  main#study-fusion section .content-block {
+    width: 90%;
+  }
+  main#study-fusion section .content-block::before {
+    margin-bottom: 5rem;
+  }
+  main#study-fusion section .content-block .sec-content {
+    padding: 0;
+  }
+  main#study-fusion section .content-block .sec-content h2 {
+    font-size: 2.75rem;
+    line-height: auto !important;
+  }
+  main#study-fusion section .content-block .sec-content p {
+    margin: 1.25rem 0 0 0;
+    font-size: 0.93rem;
+    width: auto;
+  }
+  main#study-fusion section.fusion-title-header {
+    background-size: 180%;
+    background-position: center 3rem;
+  }
+  main#study-fusion section.fusion-title-header .content-block .sec-content {
+    margin: 26rem 0 6rem;
+  }
+  main#study-fusion section.fusion-title-header .content-block .sec-content h2 {
+    font-size: 2.75rem;
+  }
+  main#study-fusion section.fusion-title-header .content-block .sec-content p {
+    font-size: 0.93rem;
+  }
+  main#study-fusion section.fusion-title-header .content-block .scroll-arrow {
+    display: none;
+    margin: 4rem auto 6rem;
+    width: 1.3rem;
+    height: 1.3rem;
+  }
+  main#study-fusion section.fusion-inhouse {
+    background-size: 125%;
+    background-position: center 4rem;
+    padding: 0;
+  }
+  main#study-fusion section.fusion-inhouse .content-block .sec-content {
+    margin: 21rem auto 6rem;
+    width: 90%;
+  }
+  main#study-fusion section.fusion-inhouse .content-block .sec-content h2 {
+    font-size: 2.75rem;
+  }
+  main#study-fusion section.fusion-inhouse .content-block .sec-content p {
+    font-size: 0.93rem;
+  }
+  main#study-fusion section.fusion-asthetic {
+    background-size: 125%;
+    background-position: center 33rem;
+    height: 72rem;
+    padding: 0;
+  }
+  main#study-fusion section.fusion-asthetic .content-block .sec-content {
+    margin: 6rem auto 0;
+    width: 90%;
+  }
+  main#study-fusion section.fusion-asthetic .content-block .sec-content h2 {
+    font-size: 2.75rem;
+  }
+  main#study-fusion section.fusion-asthetic .content-block .sec-content p {
+    font-size: 0.93rem;
+  }
+  main#study-fusion section.fusion-mobile-app {
+    padding: 0;
+    overflow-x: hidden;
+  }
+  main#study-fusion section.fusion-mobile-app .content-block .sec-content {
+    margin: 6rem auto 0;
+    width: 90%;
+  }
+  main#study-fusion section.fusion-mobile-app .content-block .sec-content h2 {
+    font-size: 2.75rem;
+  }
+  main#study-fusion section.fusion-mobile-app .content-block .sec-content p {
+    font-size: 0.93rem;
+  }
+  main#study-fusion section.fusion-mobile-app img.logo-object {
+    width: 80%;
+    margin: 4rem auto 6rem;
+  }
+  main#study-fusion section.fusion-mobile-app img.app-preview {
+    width: 155%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main#study-fusion section.fusion-web-app {
+    background-size: 88%;
+    padding: 0;
+    height: 36rem;
+    overflow-x: hidden;
+  }
+  main#study-fusion section.fusion-web-app .content-block .sec-content {
+    margin: 6rem auto 0;
+    width: 90%;
+  }
+  main#study-fusion section.fusion-web-app .content-block .sec-content h2 {
+    font-size: 2.75rem;
+  }
+  main#study-fusion section.fusion-web-app .content-block .sec-content p {
+    font-size: 0.93rem;
+  }
+  main#study-fusion section.fusion-web-preview {
+    overflow-x: hidden;
+  }
+  main#study-fusion section.fusion-web-preview img.web-preview {
+    width: 150%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  main#study-transroad section .content-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main#study-transroad section .content-block h2 {
+    font-size: 2.75rem;
+  }
+  main#study-transroad section .content-block p {
+    font-size: 0.93rem;
+  }
+  main#study-transroad section.video-section-transroad {
+    display: block !important;
+    height: 60vh;
+    border-top: 3rem solid #000;
+  }
+  main#study-transroad section.video-section-transroad video {
+    height: 60vh;
+    min-height: auto;
+    transform: translate(-50%, 0);
+  }
+  main#study-transroad section.hero-title .content-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main#study-transroad section.hero-title .content-block h2 {
+    font-size: 2.75rem;
+    margin: 0 0 1.5625rem;
+  }
+  main#study-transroad section.hero-title .content-block p {
+    font-size: 0.93rem;
+  }
+  main#study-transroad section.hero-title .content-block .arrow-down {
+    margin: 2.5rem auto 6.62rem;
+  }
+  main#study-transroad section.transroad-icon-identity img {
+    display: none;
+  }
+  main#study-transroad section.transroad-icon-identity .mobile-fig1 {
+    display: block;
+    margin: 16rem auto 0;
+    background: url("images/transroad/logo.png") no-repeat left top;
+    background-size: 40rem;
+    width: 13.3rem;
+    height: 14rem;
+  }
+  main#study-transroad section.transroad-icon-identity .mobile-fig2 {
+    display: block;
+    margin: 0 auto;
+    background: url("images/transroad/logo.png") no-repeat right -2rem;
+    background-size: 23rem;
+    width: 65%;
+    height: 20rem;
+  }
+  main#study-transroad section.transroad-brand-visuals {
+    padding-bottom: 0;
+  }
+  main#study-transroad section.transroad-brand-visuals img.fig {
+    width: 100%;
+    margin: -0.3rem auto 0;
+  }
+  main#study-transroad section.transroad-visual-language {
+    padding: 0;
+    margin-top: -0.5rem;
+  }
+  main#study-transroad section.transroad-visual-language .sec-content {
+    width: 90%;
+    margin: 7rem auto 4rem;
+  }
+  main#study-transroad section.transroad-visual-language .sec-content h2 {
+    font-size: 2.5rem;
+  }
+  main#study-transroad section.transroad-visual-language .sec-content p {
+    font-size: 0.93rem;
+    width: auto;
+  }
+  main#study-transroad section.transroad-mobile-app img {
+    display: none;
+  }
+  main#study-transroad section.transroad-mobile-app .mobile-fig1 {
+    width: 100%;
+    height: 30rem;
+    display: block;
+    background: url("images/transroad/transroad-mobile.png") no-repeat center -1.3rem;
+    background-size: 128%;
+  }
+  main#study-transroad section.transroad-mobile-app .mobile-fig2 {
+    width: 100%;
+    height: 30rem;
+    display: block;
+    background: url("images/transroad/phone-slab@3x.png") no-repeat right center;
+    background-size: 166%;
+    margin: 3rem 0 0;
+  }
+  main#study-transroad section.transroad-mobile-ss .sec-content {
+    margin: 5rem 0 0;
+  }
+  main#study-transroad section.transroad-mobile-ss .sec-content h2 {
+    font-size: 2.5rem;
+  }
+  main#study-transroad section.transroad-mobile-ss .sec-content p {
+    font-size: 0.93rem;
+    width: auto;
+  }
+  main#study-transroad section.transroad-mobile-ss-customer .sec-content {
+    margin: 5rem 0 0;
+  }
+  main#study-transroad section.transroad-mobile-ss-customer .sec-content h2 {
+    font-size: 2.5rem;
+  }
+  main#study-transroad section.transroad-mobile-ss-customer .sec-content p {
+    font-size: 0.93rem;
+    width: auto;
+  }
+  main#study-bok section .content-block {
+    width: 90%;
+    margin: 0 auto;
+  }
+  main#study-bok section .content-block h2 {
+    font-size: 2.75rem;
+  }
+  main#study-bok section .content-block p {
+    font-size: 0.93rem;
+  }
+  main#study-bok section.bok-hero-banner {
+    background-position: -17rem bottom;
+    background-size: 52rem;
+  }
+  main#study-bok section.bok-hero-banner .sec-content {
+    width: 100%;
+  }
+  main#study-bok section.bok-hero-banner .sec-content h2 {
+    font-size: 2.6rem;
+  }
+  main#study-bok section.bok-hero-banner .sec-content p {
+    font-size: 1rem;
+    width: 90%;
+  }
+  main#study-bok section.bok-hero-banner .arrow-down {
+    margin: 13rem auto 0;
+  }
+  main#study-bok section.bok-app-icon-identity {
+    justify-content: flex-start;
+    background: url("images/bok/bitmap@3x.png") no-repeat center top;
+    background-size: 175%;
+    overflow-x: hidden;
+  }
+  main#study-bok section.bok-app-icon-identity img.app-icon {
+    display: none;
+  }
+  main#study-bok section.bok-app-icon-identity .sec-content {
+    width: 100%;
+    margin: 30rem auto 0;
+  }
+  main#study-bok section.bok-app-icon-identity .sec-content h2 {
+    font-size: 2.6rem;
+  }
+  main#study-bok section.bok-app-icon-identity .sec-content p {
+    font-size: 1rem;
+    color: #000;
+    margin: 1rem 0 2rem;
+  }
+  main#study-bok section.bok-app-icon-identity img {
+    width: 153%;
+  }
+  main#study-bok section.bok-mobile-interface {
+    margin-top: -18rem;
+    background-position: center 21.5rem;
+    background-size: 130%;
+    overflow-x: hidden;
+  }
+  main#study-bok section.bok-mobile-interface .sec-content {
+    margin: 12rem auto 3rem;
+  }
+  main#study-bok section.bok-mobile-interface .sec-content h2 {
+    font-size: 2.6rem;
+  }
+  main#study-bok section.bok-mobile-interface .sec-content p {
+    font-size: 1rem;
+  }
+  main#study-bok section.bok-mobile-interface img {
+    transform: translate(-50%, 0);
+    left: 50%;
+    position: relative;
+    width: 130%;
+    margin: 25rem 0 6.25rem;
+  }
+  main#study-bok section.bok-web-interface {
+    justify-content: flex-start;
+  }
+  main#study-bok section.bok-web-interface .sec-content {
+    float: none;
+    margin: 8.25rem 0 7rem;
+    right: 0;
+    width: 80%;
+  }
+  main#study-bok section.bok-web-interface .sec-content h2 {
+    font-size: 2.6rem;
+    text-align: left;
+  }
+  main#study-bok section.bok-web-interface .sec-content p {
+    font-size: 1rem;
+    text-align: left;
+  }
+  main#study-bok section.bok-web-interface img {
+    margin: 0;
+  }
+}
+/* Tablets and Larger Devices: */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* Styles for devices with a minimum width of 768px and maximum width of 991px (e.g., tablets) 
+      iPad Air: 820 X 1180
+      iPad Pro: 1024 X 1366
+  */
+  main#static-index .section.row h2, main#static-index .section.row p {
+    width: 90%;
+  }
+  main#static-index .section.row .content-block {
+    width: 90%;
+    margin: 23rem auto;
+  }
+  main#static-index .section.row .content-block-2 {
+    width: 90%;
+    margin: 0 auto 23rem;
+    padding-top: 30vh;
+  }
+  main#static-index .section.row .content-block-2 h2, main#static-index .section.row .content-block-2 p {
+    width: 77%;
+    margin: 0 0 1.5rem 6%;
+  }
+  main#static-index .section.row .content-block-3 {
+    width: 90%;
+    margin: 23rem auto;
+  }
+  main#static-index .section.row .content-block-3 h2, main#static-index .section.row .content-block-3 p {
+    width: 78%;
+    text-align: center;
+  }
+  main#static-index .section.row .content-block-3b {
+    width: 90%;
+    margin: 0 auto 23rem;
+    padding-top: 40vh;
+  }
+  main#static-index .section#slide1 {
+    height: 153rem;
+    background-position: right 6rem;
+    background-size: 170%;
+  }
+  main#static-index #slide2 {
+    height: 170rem;
+  }
+  main#static-index #slide2 .content-block-2 {
+    padding-top: 40vh;
+    margin-bottom: 0;
+  }
+  main#static-index .section#slide3 {
+    height: 155rem;
+  }
+  main#contact-us .section.row {
+    width: 100%;
+    background-position: 76% center;
+    background-size: 200%;
+  }
+  main#contact-us .section.row .content-block {
+    width: 90%;
+    margin: 10rem auto;
+  }
+  main#contact-us .section.row .content-block h2 {
+    display: block;
+  }
+  main#contact-us .section.row .content-block ul {
+    margin-top: 33rem;
+  }
+  main#contact-us .section.row .content-block ul li h4.country-office {
+    font-size: 1.4rem;
+  }
+  main#contact-us .section.row .content-block ul li p.address {
+    font-size: 1.2rem;
+  }
+}
+/* Desktop and Larger Devices: */
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  /* Styles for devices with a minimum width of 992px and maximum width of 1199px (e.g., laptops and desktops) */
+}
+/* Large Desktop Devices: */
+@media only screen and (min-width: 1200px) {
+  /* Styles for devices with a minimum width of 1200px (e.g., large desktop screens) */
+  main#study-ubl #intro-video-seq1 {
+    width: 100vw;
+    height: auto;
+  }
+}

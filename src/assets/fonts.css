@@ -1,0 +1,210 @@
+@font-face {
+  font-family: "AspiraBlack";
+  src: url("./fonts/Aspira-Black.woff2") format("woff2"), url("././fonts/Aspira-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraBlackIt";
+  src: url("./fonts/Aspira-BlackIt.woff2") format("woff2"), url("./fonts/Aspira-BlackIt.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraBold";
+  src: url("./fonts/Aspira-Bold.woff2") format("woff2"), url("./fonts/Aspira-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraBoldIt";
+  src: url("./fonts/Aspira-BoldIt.woff2") format("woff2"), url("./fonts/Aspira-BoldIt.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraDemi";
+  src: url("./fonts/Aspira-Demi.woff2") format("woff2"), url("./fonts/Aspira-Demi.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraDemiIt";
+  src: url("./fonts/Aspira-DemiIt.woff2") format("woff2"), url("./fonts/Aspira-DemiIt.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraIt";
+  src: url("./fonts/Aspira-It.woff2") format("woff2"), url("./fonts/Aspira-It.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraHeavy";
+  src: url("./fonts/Aspira-Heavy.woff2") format("woff2"), url("./fonts/Aspira-Heavy.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraHeavyIt";
+  src: url("./fonts/Aspira-HeavyIt.woff2") format("woff2"), url("./fonts/Aspira-HeavyIt.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraLight";
+  src: url("./fonts/Aspira-Light.woff2") format("woff2"), url("./fonts/Aspira-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraLightIt";
+  src: url("./fonts/Aspira-LightIt.woff2") format("woff2"), url("./fonts/Aspira-LightIt.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraRegular";
+  src: url("./fonts/Aspira-Regular.woff2") format("woff2"), url("./fonts/Aspira-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraMedium";
+  src: url("./fonts/Aspira-Medium.woff2") format("woff2"), url("./fonts/Aspira-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraMediumIt";
+  src: url("./fonts/Aspira-MediumIt.woff2") format("woff2"), url("./fonts/Aspira-MediumIt.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraThin";
+  src: url("./fonts/Aspira-Thin.woff2") format("woff2"), url("./fonts/Aspira-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "AspiraThinIt";
+  src: url("./fonts/Aspira-ThinIt.woff2") format("woff2"), url("./fonts/Aspira-ThinIt.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Black";
+  src: url("./fonts/NNNouvelleGroteskSTD-Black.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-BoldIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-BoldDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-BoldDiagonal.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Fat";
+  src: url("./fonts/NNNouvelleGroteskSTD-Fat.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Fat.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-BlackIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-BlackDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-BlackDiagonal.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Bold";
+  src: url("./fonts/NNNouvelleGroteskSTD-Bold.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Light";
+  src: url("./fonts/NNNouvelleGroteskSTD-Light.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-LightIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-LightDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-LightDiagonal.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-MediumIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-MediumDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-MediumDiagonal.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Medium";
+  src: url("./fonts/NNNouvelleGroteskSTD-Medium.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-FatIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-FatDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-FatDiagonal.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Thin";
+  src: url("./fonts/NNNouvelleGroteskSTD-Thin.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Thin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-ThinIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-ThinDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-ThinDiagonal.woff") format("woff");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-Normal";
+  src: url("./fonts/NNNouvelleGroteskSTD-Normal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-Normal.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "NN Nouvelle Grotesk STD-NormalIt";
+  src: url("./fonts/NNNouvelleGroteskSTD-NormalDiagonal.woff2") format("woff2"), url("./fonts/NNNouvelleGroteskSTD-NormalDiagonal.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
